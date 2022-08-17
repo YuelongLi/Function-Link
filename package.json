@@ -1,9 +1,10 @@
 {
   "name": "function-link",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "cross language functional data transfer protocol",
-  "main": "index.js",
+  "main": "typescript/build/js/function-link.js",
   "scripts": {
+    "build": "tsc --build ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,12 +26,14 @@
     "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "tsify": "^5.0.4",
     "typescript": "^4.7.4",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "gulp-rename": "^2.0.0",
     "jquery": "^3.6.0"
   }
 }

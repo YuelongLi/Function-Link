@@ -8,10 +8,10 @@ class Portal{
 
 class Link{
    port: number;
-   waiting = false;
-   reqQueue: (number | number[])[]=[];
-   values: (number | number[])[]=[];
-   callbackQueue: ((value:number|number[])=>void)[]=[];
+   private waiting = false;
+   private reqQueue: (number | number[])[]=[];
+   private values: (number | number[])[]=[];
+   private callbackQueue: ((value:number|number[])=>void)[]=[];
    dim: number;
    constructor(port: number, reqDimensions: number) {
       this.port = port;
@@ -31,8 +31,7 @@ class Link{
     * There should only be one instance of post running at
     * all times
     */
-   post(){
-      console.log("post called");
+   private post(){
       let req = $.ajax({
          url: 'http://localhost:8080/singular',
          method: 'POST',

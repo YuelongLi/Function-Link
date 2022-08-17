@@ -25,7 +25,7 @@ gulpbuild.task(
         return browserify({
             basedir: ".",
             debug: true,
-            entries: ["src/test.ts"],
+            entries: ["src/Test.ts"],
             cache: {},
             packageCache: {},
         })

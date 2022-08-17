@@ -29,12 +29,12 @@ function getValues(){
 
 // getValues();
 
-let link = Portal.importFunc(8081, 2);
+let link = Portal.importFunc(8080, 2);
 let count = 0;
 for(let i = 0; i<5000; i++){
     link.get([i,-i],(val)=>{
-        // console.log(val);
-        count++;
-        console.log(count);
+        console.log(val);
+        // count++;
+        // console.log(count);
     });
 }
