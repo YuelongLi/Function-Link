@@ -1,0 +1,36 @@
+{
+  "name": "function-link",
+  "version": "1.0.0",
+  "description": "cross language functional data transfer protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuelongLi/Function-Link.git"
+  },
+  "keywords": [
+    "data",
+    "data-transferring"
+  ],
+  "author": "Yuelong Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuelongLi/Function-Link/issues"
+  },
+  "homepage": "https://github.com/YuelongLi/Function-Link#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "tsify": "^5.0.4",
+    "typescript": "^4.7.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
