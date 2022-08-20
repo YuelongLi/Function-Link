@@ -17,7 +17,7 @@ Importing a function
 // First parameter port, second parameter input dimension
 let link = Portal.importFunc(8080, 2);
 // Asynchronous access
-link.get([1,-1],(val)=>{
+link.get([1,-1]).then((val)=>{
     console.log(val);
 });
 ```
